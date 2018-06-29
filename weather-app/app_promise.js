@@ -35,6 +35,6 @@ const argv = yargs
 		if (e.code === 'ENOTFOUND') {
 			console.log('Unable to connect to API servers');
 		} else {
-			console.log(`Error found: ${e.message}`);
+			console.log(`Error found: ${e}`);
 		}
 	});
