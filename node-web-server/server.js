@@ -40,6 +40,11 @@ app.get('/about', (req, res) => {
         pageTitle: "About Page Suckers !",
     });
 })
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: "My Projects",
+    });
+})
 
 app.get('/bad', (req, res) => {
     res.send({
